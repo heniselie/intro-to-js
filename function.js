@@ -57,10 +57,8 @@ console.log(spamFactory('jone woker'));*/
 console.log('intro-to-js');
 
 const printToDOM = (toPrint) => {
-    document.getElementById('output').innerHTML = toPrint;
+    document.getElementById('output').innerHTML += toPrint;
 }
-
-
 let bandNumber = 1;
 
 
@@ -71,13 +69,13 @@ const takeNumber =  (bandName) => {
   */
 
 printToDOM(`<h3>${bandNumber}) ${bandName} </h3>`);
-bandNumber++};
-
+bandNumber++;
+};
   //printToDom();  // you should already have this function written from the class lecture
 
 
-takeNumber("Galactic Scum") // This should display "1. Galactic Scum" in the DOM
-takeNumber("Underdogs") // This should display "2. Underdogs" in the DOM
+takeNumber("Galactic Scum"); // This should display "1. Galactic Scum" in the DOM
+takeNumber("Underdogs"); // This should display "2. Underdogs" in the DOM
 
 
 
