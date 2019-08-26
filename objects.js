@@ -35,7 +35,7 @@ const findAndLogEmployeeStatus = (employee) => {
         employee.status = 'pleasant'
 
     }
-    console.log('micheal is always vip')
+    // console.log('micheal is always vip')
     console.log(`${employee.name} is a total ${employee.status}`)
     return employee;
 }
